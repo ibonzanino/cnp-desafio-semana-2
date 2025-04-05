@@ -178,6 +178,47 @@ h2 {
   transform: scale(1.03);
 }
 
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact form label {
+  text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+  resize: none;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--main-text-light);
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  outline: none;
+  border-color: var(--main-text-color);
+}
+
+.contact form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: var(--main-text-color);
+  transform: scale(1.03);
+}
+
 @media screen and (min-width: 700px) {
   .nav-hide {
     display: block;
