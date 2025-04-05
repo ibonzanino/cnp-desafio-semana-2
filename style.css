@@ -1,0 +1,24 @@
+:root {
+  --main-bg-color: #f0f0f0;
+  --main-bg-light: #fff;
+  --main-text-color: #333;
+  --main-text-light: #ccc;
+  --primary-color: #007bff;
+  --secondary-color: #003670;
+  --light-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
