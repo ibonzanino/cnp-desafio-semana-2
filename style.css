@@ -161,6 +161,23 @@ h2 {
   margin-bottom: 10px;
 }
 
+.portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.portfolio .portfolio-container .portfolio-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-container .portfolio-item img:hover {
+  transform: scale(1.03);
+}
+
 @media screen and (min-width: 700px) {
   .nav-hide {
     display: block;
@@ -168,5 +185,9 @@ h2 {
 
   .services-container {
     flex-direction: row;
+  }
+
+  .portfolio .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
